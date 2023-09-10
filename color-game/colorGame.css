@@ -1,0 +1,755 @@
+@import url("//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MODAL */
+.modal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191516;
+}
+
+.container-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C9DAEA;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    color: #000;
+    font-size: 70px;
+    color: #AB2346;
+    font-family: "Retro Gaming";
+}
+
+.container-welcome>label {
+    font-family: "Retro Gaming";
+    color: #191516;
+    font-size: 34px;
+}
+
+#puhunan {
+    font-family: "Retro Gaming";
+    padding: .5rem;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+#confirm-btn {
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #11151C;
+    color: #FFFFFF;
+    font-family: "Retro Gaming";
+    border-radius: 15px;
+    transition: all .2s;
+}
+
+#confirm-btn:hover {
+    color: #11151C;
+    background-color: #00B295;
+    font-size: 16px;
+    transform: scale(1.2);
+
+}
+
+/* HEADER */
+.header {
+    background-color: #191516;
+    color: #FFFFFF;
+    font-family: "Retro Gaming";
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.balance {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.parent {
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* BET */
+.container-bet {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00B295;
+    border-radius: 15px;
+}
+
+.wrapper-balance {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    color: white;
+    background: #191516;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.wrapper-bet {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: #AB2346;
+    color: white;
+}
+
+
+
+
+.current-money {
+    color: #AB2346;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+}
+
+.current-bet {
+    color: #191516;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+}
+
+.your-bet {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+}
+
+.result {
+    font-family: 'Sono', sans-serif;
+    font-size: 24px;
+    background-color: #191516;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#dice1 {
+    height: 200px;
+    width: 200px;
+    background-color: #C9DAEA;
+}
+
+#dice2 {
+    height: 200px;
+    width: 200px;
+    background-color: #C9DAEA;
+}
+
+#resultBtn {
+    color: #191516;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#resultBtn:hover {
+    transform: scale(1.2);
+}
+
+/* COLORS */
+.container-colors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wrapper-colordivider1>div {
+    height: 250px;
+    width: 250px;
+    border: solid 1px;
+}
+
+.wrapper-colordivider2>div {
+    height: 250px;
+    width: 250px;
+    border: solid 1px;
+}
+
+
+#red {
+    background-color: red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+}
+
+#blue {
+    background-color: blue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#yellow {
+    background-color: yellow;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+}
+
+#white {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+}
+
+#green {
+    background-color: green;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pink {
+    background-color: pink;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 15px;
+}
+
+/* modal ng colors pag tataya */
+
+/* MODAL NG RED */
+.modal-pusta-red {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    gap: 0.5rem;
+}
+
+.betonred {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betonred:hover {
+    transform: scale(1.1);
+}
+
+.buttons-red {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-red>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-red>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-red {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+/* BLUE MODAL */
+.modal-pusta-blue {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    gap: 0.5rem;
+}
+
+.betonblue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betonblue:hover {
+    transform: scale(1.1);
+}
+
+.buttons-blue {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-blue>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-blue>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-blue {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+
+/* YELLOW MODAL */
+.modal-pusta-yellow {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+    gap: 0.5rem;
+}
+
+.betonyellow {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betonyellow:hover {
+    transform: scale(1.1);
+}
+
+.buttons-yellow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-yellow>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-yellow>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-yellow {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+
+/* WHITE MODAL */
+.modal-pusta-white {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    gap: 0.5rem;
+}
+
+.betonwhite {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betonwhite:hover {
+    transform: scale(1.1);
+}
+
+.buttons-white {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-white>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-white>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-white {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+/* GREEN MODAL */
+.modal-pusta-green {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: green;
+    gap: 0.5rem;
+}
+
+.betongreen {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betongreen:hover {
+    transform: scale(1.1);
+}
+
+.buttons-green {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-green>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-green>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-green {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+
+/* PINK MODAL*/
+.modal-pusta-pink {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+    gap: 0.5rem;
+}
+
+.betonpink {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.betonpink:hover {
+    transform: scale(1.1);
+}
+
+.buttons-pink {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons-pink>button {
+    font-size: 43px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 70px;
+}
+
+.buttons-pink>button:hover {
+    transform: scale(1.2);
+}
+
+#amount-custom-pink {
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 5px;
+}
+
+
+
+#amount-custom {
+    color: #2D3047;
+    font-family: 'Sono', sans-serif;
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+.wrapper-customAmount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customLabel {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    color: black;
+}
+
+#custom-btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: #2D3047;
+    background-color: #93B7BE;
+    cursor: pointer;
+}
+
+/* CONFIRM BUTTON ID */
+#confirm-btn-red {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-red:hover {
+    transform: scale(1.2);
+}
+
+#confirm-btn-blue {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-blue:hover {
+    transform: scale(1.2);
+}
+
+#confirm-btn-yellow {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-yellow:hover {
+    transform: scale(1.2);
+}
+
+#confirm-btn-white {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-white:hover {
+    transform: scale(1.2);
+}
+
+#confirm-btn-green {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-green:hover {
+    transform: scale(1.2);
+}
+
+#confirm-btn-pink {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    transition: all .5s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#confirm-btn-pink:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* values of current bets percolor */
+
+.redValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}
+
+.blueValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}
+
+.whiteValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}
+
+.yellowValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}
+
+.greenValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}
+
+.pinkValue {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding: .5rem;
+}

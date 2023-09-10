@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Color Game
+    </title>
+    <link rel="stylesheet" href="colorGame.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="modal">
+            <div class="container-welcome">
+                <h1 class="welcome">WELCOME TO COLOR GAME!</h1>
+                <label for="puhunan">Please place your credits!</label>
+                <input type="number" name="puhunan" id="puhunan">
+                <button id="confirm-btn">CONFIRM</button>
+            </div>
+
+        </div>
+
+
+        <div class="parent">
+            <header class="header">COLOR GAME</header>
+            <div class="interface">
+                <div class="container-bet">
+                    <section class="wrapper-balance">
+                        <p class="balance">CURRENT BALANCE:</p>
+                    </section>
+                    <section class="wrapper-bet">
+                        <p class="your-bet">Your Bet:</p>
+                        <p class="bet-input"></p>
+                    </section>
+                    <div class="result">
+                        <button id="resultBtn">Get Result</button>
+
+                        <div id="dice1"></div>
+                        <div id="dice2"></div>
+
+                    </div>
+                </div>
+
+
+                <div class="container-colors">
+
+                    <div class="wrapper-colordivider1">
+                        <div id="red">
+                            <p class="redValue">0</p>
+                            <button class="betonred">Bet on Red</button>
+                            <div class="modal-pusta-red">
+                                <div class="buttons-red">
+                                    <button id="red-amount-5">5</button>
+                                    <button id="red-amount-25">25</button>
+                                    <button id="red-amount-50">50</button>
+                                    <button id="red-amount-75">75</button>
+                                    <button id="red-amount-100">100</button>
+                                </div>
+
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-red">
+
+                                </div>
+                                <button id="confirm-btn-red">CONFIRM BET</button>
+                            </div>
+                        </div>
+                        <div id="blue">
+                            <p class="blueValue">0</p>
+                            <button class="betonblue">Bet on Blue</button>
+                            <div class="modal-pusta-blue">
+                                <div class="buttons-blue">
+                                    <button id="blue-amount-5">5</button>
+                                    <button id="blue-amount-25">25</button>
+                                    <button id="blue-amount-50">50</button>
+                                    <button id="blue-amount-75">75</button>
+                                    <button id="blue-amount-100">100</button>
+                                </div>
+
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-blue">
+
+                                </div>
+                                <button id="confirm-btn-blue">CONFIRM BET</button>
+                            </div>
+                        </div>
+                        <div id="yellow">
+                            <p class="yellowValue">0</p>
+                            <button class="betonyellow">Bet on Yellow</button>
+                            <div class="modal-pusta-yellow">
+                                <div class="buttons-yellow">
+                                    <button id="yellow-amount-5">5</button>
+                                    <button id="yellow-amount-25">25</button>
+                                    <button id="yellow-amount-50">50</button>
+                                    <button id="yellow-amount-75">75</button>
+                                    <button id="yellow-amount-100">100</button>
+                                </div>
+
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-yellow">
+
+                                </div>
+                                <button id="confirm-btn-yellow">CONFIRM BET</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-colordivider2">
+
+                        <div id="white">
+                            <p class="whiteValue">0</p>
+                            <button class="betonwhite">Bet on White</button>
+                            <div class="modal-pusta-white">
+                                <div class="buttons-white">
+                                    <button id="white-amount-5">5</button>
+                                    <button id="white-amount-25">25</button>
+                                    <button id="white-amount-50">50</button>
+                                    <button id="white-amount-75">75</button>
+                                    <button id="white-amount-100">100</button>
+                                </div>
+
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-white">
+
+                                </div>
+                                <button id="confirm-btn-white">CONFIRM BET</button>
+                            </div>
+                        </div>
+                        <div id="green">
+
+                            <p class="greenValue">0</p>
+                            <button class="betongreen">Bet on Green</button>
+                            <div class="modal-pusta-green">
+                                <div class="buttons-green">
+                                    <button id="green-amount-5">5</button>
+                                    <button id="green-amount-25">25</button>
+                                    <button id="green-amount-50">50</button>
+                                    <button id="green-amount-75">75</button>
+                                    <button id="green-amount-100">100</button>
+                                </div>
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-green">
+
+                                </div>
+                                <button id="confirm-btn-green">CONFIRM BET</button>
+                            </div>
+
+                        </div>
+                        <div id="pink">
+                            <p class="pinkValue">0</p>
+                            <button class="betonpink">Bet on Pink</button>
+                            <div class="modal-pusta-pink">
+                                <div class="buttons-pink">
+                                    <button id="pink-amount-5">5</button>
+                                    <button id="pink-amount-25">25</button>
+                                    <button id="pink-amount-50">50</button>
+                                    <button id="pink-amount-75">75</button>
+                                    <button id="pink-amount-100">100</button>
+                                </div>
+
+                                <div class="wrapper-customAmount">
+                                    <label id="customLabel" for="custom">Custom Amount</label>
+                                    <input type="number" name="custom" id="amount-custom-pink">
+
+                                </div>
+                                <button id="confirm-btn-pink">CONFIRM BET</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+<script src="colorGame.js"></script>
+
+</html>
